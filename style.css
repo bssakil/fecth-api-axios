@@ -1,0 +1,78 @@
+/* Reset CSS Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Reset CSS End */
+
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Course Card Design Start */
+.posts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.post {
+    width: 23%;
+    margin: 0.6rem;
+    padding: 1rem;
+
+    box-shadow: 0 4px 8px 0 red;
+    transition: all 0.6s;
+}
+
+.post:hover {
+    box-shadow: 0 8px 16px 0 red;
+    transition: all 0.6s;
+}
+/* Course Card Design End */
+
+
+/* ========================= */
+/* Responsive Design Start */
+/* ========================= */
+
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+
+    .post {
+        width: 45%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+
+    .post {
+        width: 100%;
+        margin: 0.6rem 0;
+    }
+
+    .posts {
+        padding: 0.8rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/* Responsive Design End */
